@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroLink Systems</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">NeuroLink Systems</div>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="news.html">News</a>
+    <a href="login.html" class="login">Employee</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Reconstructing Human Intelligence</h1>
+    <p>次世代神経AI技術の最前線へ</p>
+    <a href="research.html" class="btn">View Research</a>
+  </div>
+</section>
+
+<section class="about">
+  <h2>Our Mission</h2>
+  <p>
+    私たちは神経科学と人工知能を融合し、
+    医療と記憶補完の未来を創造します。
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 NeuroLink Systems. All rights reserved.</p>
+</footer>
+
+<script>
+/* ===== スクロールフェードイン ===== */
+const fades = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+  fades.forEach(fade => {
+    const rect = fade.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      fade.classList.add('show');
+    }
+  });
+});
+
+/* ===== ヘッダー変化 ===== */
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('header');
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+</script>
+
+
+</body>
+</html>
