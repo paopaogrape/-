@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>社員ログイン</title>
+</head>
+<body>
+  <h2>社員専用ページ</h2>
+
+  <input type="password" id="pass">
+  <button onclick="check()">ログイン</button>
+
+  <script>
+    function check() {
+      var input = document.getElementById("pass").value;
+      if (input === "evolution") {
+        window.location.href = "hidden/log1.html";
+      } else {
+        alert("パスワードが違います");
+      }
+    }
+  </script>
+</body>
+</html>

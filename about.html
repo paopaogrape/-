@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | NeuroLink Systems</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><a href="index.html" style="color:white; text-decoration:none;">NeuroLink Systems</a></div>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="news.html">News</a>
+    <a href="login.html" class="login">Employee</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>About Us</h1>
+  <p>NeuroLink Systemsについて</p>
+</section>
+
+<section class="content fade">
+  <h2>Company Overview</h2>
+  <p>
+    NeuroLink Systemsは2021年に設立された
+    神経科学と人工知能の融合を目指す研究企業です。
+    私たちは脳信号解析技術を応用し、
+    記憶補完および神経再構築の分野で革新を続けています。
+  </p>
+
+  <h2>Our Vision</h2>
+  <p>
+    人間の知性を再定義する。
+    それが私たちの使命です。
+  </p>
+
+  <h2>Facilities</h2>
+  <p>
+    本社研究施設（非公開）  
+    第2実験棟（アクセス制限区域）
+  </p>
+
+  <h2>Corporate Data</h2>
+  <ul>
+    <li>CEO: Dr. Alan Reeves</li>
+    <li>Founded: 2021</li>
+    <li>Employees: 47</li>
+    <li>Test Subjects: 08</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 NeuroLink Systems. All rights reserved.</p>
+</footer>
+
+<script>
+/* フェードイン */
+const fades = document.querySelectorAll('.fade');
+window.addEventListener('scroll', () => {
+  fades.forEach(fade => {
+    const rect = fade.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      fade.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research | NeuroLink Systems</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html" style="color:white; text-decoration:none;">
+      NeuroLink Systems
+    </a>
+  </div>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="news.html">News</a>
+    <a href="login.html" class="login">Employee</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Research & Development</h1>
+  <p>神経再構築技術の研究領域</p>
+</section>
+
+<section class="content fade">
+
+  <h2>Project NEXUS</h2>
+  <p>
+    脳波データの高精度マッピングを行い、
+    記憶情報の抽出および再構築を可能にする次世代AI基盤。
+    被験者の神経信号をリアルタイムで解析し、
+    デジタル環境への転写を実現します。
+  </p>
+
+  <h2>Memory Reconstruction Protocol</h2>
+  <p>
+    断片化した記憶情報をアルゴリズム的に補完し、
+    主観体験の再現性を向上させる実験プロトコル。
+    第2実験棟にて限定運用中。
+  </p>
+
+  <h2>Human Intelligence Continuity Program</h2>
+  <p>
+    人間の意識データを保存し、
+    長期的な知性の持続を目指す研究。
+    現在フェーズ2（Stability Test）を実施中。
+  </p>
+
+  <h2>Current Status</h2>
+  <ul>
+    <li>Active Subjects: 07</li>
+    <li>Synchronization Rate: 82%</li>
+    <li>Data Integrity: Stable</li>
+    <li>Incident Report: 01</li>
+  </ul>
+
+</section>
+
+<footer>
+  <p>© 2026 NeuroLink Systems. All rights reserved.</p>
+</footer>
+
+<script>
+/* フェードイン */
+const fades = document.querySelectorAll('.fade');
+window.addEventListener('scroll', () => {
+  fades.forEach(fade => {
+    const rect = fade.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      fade.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
